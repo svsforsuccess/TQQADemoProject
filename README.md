@@ -6,7 +6,25 @@ Following test cases are covered as part of demo project
 
 2.Change password after logging in and validate new password is working by logging in with new password.
 
-How to execute test cases
+How to execute test cases?
+Create new project folder 
+
+git clone https://github.com/svsforsuccess/TQQADemoProject.git
+
+And open the terminal in the path and execute following commands
+
+cd testcases
+pytest Test_CreateUser.py --alluredir /Reports
+
+
+Open the reports in the following path using following command
+
+allure serve \Reports
+
+
+
+
+
 
 
 
