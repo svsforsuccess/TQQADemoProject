@@ -1,23 +1,92 @@
-01/09/21 04:12:41 PM: INFO:Clicked on login button
-01/09/21 04:14:05 PM: INFO:Clicked on login button
-01/09/21 04:22:55 PM: INFO:Clicked on login button
-01/09/21 04:24:43 PM: INFO:Clicked on login button
-01/09/21 04:26:00 PM: INFO:Clicked on login button
-01/09/21 04:30:41 PM: INFO:Clicked on login button
-01/09/21 08:05:34 PM: INFO:Clicked on login button
-01/09/21 08:47:01 PM: INFO:Clicked on login button
-01/09/21 08:52:33 PM: INFO:Clicked on login button
-01/10/21 05:44:24 PM: INFO:Clicked on login button
-01/10/21 05:49:44 PM: INFO:Clicked on login button
-01/10/21 05:54:54 PM: INFO:Clicked on login button
-01/10/21 05:57:06 PM: INFO:Clicked on login button
-01/10/21 06:02:00 PM: INFO:Clicked on login button
-01/10/21 06:12:29 PM: INFO:Clicked on login button
-01/10/21 08:08:43 PM: INFO:Clicked on login button
-01/10/21 08:11:48 PM: INFO:Clicked on login button
-01/10/21 08:14:31 PM: INFO:Clicked on login button
-01/10/21 08:16:34 PM: INFO:Clicked on login button
-01/10/21 08:26:25 PM: INFO:Clicked on login button
-01/10/21 08:27:19 PM: INFO:Clicked on login button
-01/10/21 08:31:08 PM: INFO:Clicked on login button
-01/10/21 08:32:33 PM: INFO:Clicked on login button
+01/29/21 11:44:08 AM: INFO:****--testcasename-test_createuser---**** Clicked on login button
+01/29/21 11:44:08 AM: INFO:****--testcasename-test_createuser---****Entered username admin@tqqademoproject.com
+01/29/21 11:44:09 AM: INFO:****--testcasename-test_createuser---****Entered password changethis
+01/29/21 11:44:10 AM: INFO:****--testcasename-test_createuser---****Creating New username :admin4099
+01/29/21 11:44:11 AM: INFO:****--testcasename-test_createuser---**** Creating password :password
+01/29/21 11:44:11 AM: INFO:****--testcasename-test_createuser---**** Creating  confirm password :password
+01/29/21 11:44:13 AM: INFO:****--testcasename-test_createuser---**** Email id is being validated :admin4099
+01/29/21 11:44:13 AM: INFO:****--testcasename-test_createuser---**** validating newly created user started
+01/29/21 11:44:13 AM: INFO:****--testcasename-test_createuser---**** Entering username created to check admin4099@tqqaproject.com
+01/29/21 11:44:13 AM: INFO:****--testcasename-test_createuser---**** Entering password created to check password
+01/29/21 11:44:14 AM: INFO:****--testcasename-test_createuser---**** validating newly created user successfully done
+01/29/21 11:50:50 AM: INFO:****--testcasename-test_changepassword---**** Clicked on login button
+01/29/21 11:50:51 AM: INFO:****--testcasename-test_changepassword---****Entered username admin4099@tqqaproject.com
+01/29/21 11:50:51 AM: INFO:****--testcasename-test_changepassword---****Entered password password
+01/29/21 11:50:52 AM: INFO:****--testcasename-test_changepassword---**** Clicked on changepassword link
+01/29/21 11:50:52 AM: INFO:****--testcasename-test_changepassword---**** Entered password as pwd123456
+01/29/21 11:50:52 AM: INFO:****--testcasename-test_changepassword---**** Entered confirmpassword as pwd123456
+01/29/21 11:50:53 AM: INFO:****--testcasename-test_changepassword---**** successfully changed password
+01/29/21 11:50:53 AM: INFO:****--testcasename-test_changepassword---**** validated changpassword functionality successfully
+01/29/21 11:52:18 AM: INFO:****--testcasename-test_createuser---**** Clicked on login button
+01/29/21 11:52:19 AM: INFO:****--testcasename-test_createuser---****Entered username admin@tqqademoproject.com
+01/29/21 11:52:19 AM: INFO:****--testcasename-test_createuser---****Entered password changethis
+01/29/21 11:52:20 AM: INFO:****--testcasename-test_createuser---****Creating New username :admin6352
+01/29/21 11:52:22 AM: INFO:****--testcasename-test_createuser---**** Creating password :password
+01/29/21 11:52:22 AM: INFO:****--testcasename-test_createuser---**** Creating  confirm password :password
+01/29/21 11:52:24 AM: INFO:****--testcasename-test_createuser---**** Email id is being validated :admin6352
+01/29/21 11:52:24 AM: INFO:****--testcasename-test_createuser---**** validating newly created user started
+01/29/21 11:52:25 AM: INFO:****--testcasename-test_createuser---**** Entering username created to check admin6352@tqqaproject.com
+01/29/21 11:52:25 AM: INFO:****--testcasename-test_createuser---**** Entering password created to check password
+01/29/21 11:52:25 AM: INFO:****--testcasename-test_createuser---**** validating newly created user successfully done
+01/29/21 11:53:26 AM: INFO:****--testcasename-test_changepassword---**** Clicked on login button
+01/29/21 11:53:27 AM: INFO:****--testcasename-test_changepassword---****Entered username admin6352@tqqaproject.com
+01/29/21 11:53:27 AM: INFO:****--testcasename-test_changepassword---****Entered password password
+01/29/21 11:53:28 AM: INFO:****--testcasename-test_changepassword---**** Clicked on changepassword link
+01/29/21 11:53:29 AM: INFO:****--testcasename-test_changepassword---**** Entered password as pwd123456
+01/29/21 11:53:29 AM: INFO:****--testcasename-test_changepassword---**** Entered confirmpassword as pwd123456
+01/29/21 11:53:29 AM: INFO:****--testcasename-test_changepassword---**** successfully changed password
+01/29/21 11:53:29 AM: INFO:****--testcasename-test_changepassword---**** validated changpassword functionality successfully
+01/29/21 11:53:30 AM: INFO:****--testcasename-test_changepassword---**** validated changpassword functionality successfully
+01/29/21 12:13:52 PM: INFO:****--testcasename-test_createuser---**** Clicked on login button
+01/29/21 12:13:52 PM: INFO:****--testcasename-test_createuser---****Entered username admin@tqqademoproject.com
+01/29/21 12:13:53 PM: INFO:****--testcasename-test_createuser---****Entered password changethis
+01/29/21 12:13:54 PM: INFO:****--testcasename-test_createuser---****Creating New username :admin9926
+01/29/21 12:13:55 PM: INFO:****--testcasename-test_createuser---**** Creating password :password
+01/29/21 12:13:55 PM: INFO:****--testcasename-test_createuser---**** Creating  confirm password :password
+01/29/21 12:13:57 PM: INFO:****--testcasename-test_createuser---**** Email id is being validated :admin9926
+01/29/21 12:13:57 PM: INFO:****--testcasename-test_createuser---**** validating newly created user started
+01/29/21 12:13:58 PM: INFO:****--testcasename-test_createuser---**** Entering username created to check admin9926@tqqaproject.com
+01/29/21 12:13:58 PM: INFO:****--testcasename-test_createuser---**** Entering password created to check password
+01/29/21 12:13:58 PM: INFO:****--testcasename-test_createuser---**** validating newly created user successfully done
+01/29/21 12:14:36 PM: INFO:****--testcasename-test_createuser---**** Clicked on login button
+01/29/21 12:14:36 PM: INFO:****--testcasename-test_createuser---****Entered username admin@tqqademoproject.com
+01/29/21 12:14:37 PM: INFO:****--testcasename-test_createuser---****Entered password changethis
+01/29/21 12:14:38 PM: INFO:****--testcasename-test_createuser---****Creating New username :admin2008
+01/29/21 12:14:39 PM: INFO:****--testcasename-test_createuser---**** Creating password :password
+01/29/21 12:14:39 PM: INFO:****--testcasename-test_createuser---**** Creating  confirm password :password
+01/29/21 12:14:40 PM: INFO:****--testcasename-test_createuser---**** Email id is being validated :admin2008
+01/29/21 12:14:41 PM: INFO:****--testcasename-test_createuser---**** validating newly created user started
+01/29/21 12:14:41 PM: INFO:****--testcasename-test_createuser---**** Entering username created to check admin2008@tqqaproject.com
+01/29/21 12:14:41 PM: INFO:****--testcasename-test_createuser---**** Entering password created to check password
+01/29/21 12:14:42 PM: INFO:****--testcasename-test_createuser---**** validating newly created user successfully done
+01/29/21 12:18:19 PM: INFO:****--testcasename-test_createuser---**** Clicked on login button
+01/29/21 12:18:20 PM: INFO:****--testcasename-test_createuser---****Entered username admin@tqqademoproject.com
+01/29/21 12:18:20 PM: INFO:****--testcasename-test_createuser---****Entered password changethis
+01/29/21 12:18:21 PM: INFO:****--testcasename-test_createuser---****Creating New username :admin4675
+01/29/21 12:18:22 PM: INFO:****--testcasename-test_createuser---**** Creating password :password
+01/29/21 12:18:22 PM: INFO:****--testcasename-test_createuser---**** Creating  confirm password :password
+01/29/21 12:18:24 PM: INFO:****--testcasename-test_createuser---**** Email id is being validated :admin4675
+01/29/21 12:18:24 PM: INFO:****--testcasename-test_createuser---**** validating newly created user started
+01/29/21 12:18:25 PM: INFO:****--testcasename-test_createuser---**** Entering username created to check admin4675@tqqaproject.com
+01/29/21 12:18:25 PM: INFO:****--testcasename-test_createuser---**** Entering password created to check password
+01/29/21 12:18:26 PM: INFO:****--testcasename-test_createuser---**** validating newly created user successfully done
+01/29/21 01:35:22 PM: INFO:****--testcasename-test_createuser---**** Clicked on login button
+01/29/21 01:35:23 PM: INFO:****--testcasename-test_createuser---****Entered username admin@tqqademoproject.com
+01/29/21 01:35:24 PM: INFO:****--testcasename-test_createuser---****Entered password changethis
+01/29/21 01:35:26 PM: INFO:****--testcasename-test_createuser---****Creating New username :admin6170
+01/29/21 01:35:28 PM: INFO:****--testcasename-test_createuser---**** Creating password :password
+01/29/21 01:35:28 PM: INFO:****--testcasename-test_createuser---**** Creating  confirm password :password
+01/29/21 01:35:30 PM: INFO:****--testcasename-test_createuser---**** Email id is being validated :admin6170
+01/29/21 01:35:31 PM: INFO:****--testcasename-test_createuser---**** validating newly created user started
+01/29/21 01:35:31 PM: INFO:****--testcasename-test_createuser---**** Entering username created to check admin6170@tqqaproject.com
+01/29/21 01:35:32 PM: INFO:****--testcasename-test_createuser---**** Entering password created to check password
+01/29/21 01:35:32 PM: INFO:****--testcasename-test_createuser---**** validating newly created user successfully done
+01/29/21 01:42:03 PM: INFO:****--testcasename-test_changepassword---**** Clicked on login button
+01/29/21 01:42:04 PM: INFO:****--testcasename-test_changepassword---****Entered username admin6170@tqqaproject.com
+01/29/21 01:42:04 PM: INFO:****--testcasename-test_changepassword---****Entered password password
+01/29/21 01:42:06 PM: INFO:****--testcasename-test_changepassword---**** Clicked on changepassword link
+01/29/21 01:42:06 PM: INFO:****--testcasename-test_changepassword---**** Entered password as pwd123456
+01/29/21 01:42:07 PM: INFO:****--testcasename-test_changepassword---**** Entered confirmpassword as pwd123456
+01/29/21 01:42:07 PM: INFO:****--testcasename-test_changepassword---**** successfully changed password
+01/29/21 01:42:07 PM: INFO:****--testcasename-test_changepassword---**** validated changpassword functionality successfully
+01/29/21 01:42:09 PM: INFO:****--testcasename-test_changepassword---**** validated changpassword functionality successfully

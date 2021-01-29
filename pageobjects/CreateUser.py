@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from random import randint
+from utilities.CustomLogger import LogGen
 
 from pageobjects.LoginPage import LoginPage
 
@@ -14,20 +15,25 @@ class CreateUser():
     def __init__(self,driver):
         self.driver=driver
 
+        # Logger
 
-    def createuser(self):
+    logger = LogGen.loggen()
+    def createuser(self,testcasename):
         WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, "//div[contains(text(),'Create User')]")))
         ele_createUser = self.driver.find_element_by_xpath("//div[contains(text(),'Create User')]")
         ele_createUser.click()
         ele_fullName = self.driver.find_element_by_css_selector("input[aria-label='Full Name']")
         value = randint(1, 10000)
         ele_fullName.send_keys('admin' + str(value))
+        self.logger.info("****--testcasename-"+testcasename+"---****Creating New username :"+'admin' + str(value));
         ele_createuseremail = self.driver.find_element_by_css_selector("input[type='email']")
         ele_createuseremail.send_keys('admin' + str(value) + '@tqqaproject.com')
         ele_createuserpassword = self.driver.find_element_by_css_selector("input[aria-label='Set Password']")
         ele_createuserpassword.send_keys('password')
+        self.logger.info("****--testcasename-"+testcasename+"---**** Creating password :" + 'password');
         ele_createuserconfirmpassword = self.driver.find_element_by_css_selector("input[aria-label='Confirm Password']")
         ele_createuserconfirmpassword.send_keys('password')
+        self.logger.info("****--testcasename-"+testcasename+"---**** Creating  confirm password :" + 'password');
         WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, "//div[contains(text(),'Save')]")))
         ele_createusersave = self.driver.find_element_by_xpath("//div[contains(text(),'Save')]")
         ele_createusersave.click()
@@ -52,8 +58,8 @@ class CreateUser():
         emailuser = 'admin' + str(value) + '@tqqaproject.com'
         print(str(email.text))
         print('*****'+emailuser+'*****'+str(email.text))
+        self.logger.info("****--testcasename-"+testcasename+"---**** Email id is being validated :" + 'admin' + str(value));
         assert emailuser.__eq__(str(email.text))
-
         fnameele = self.driver.find_element_by_xpath(
             "//table[@class='v-datatable v-table theme--light']//tbody/tr[" + str(cnt) + "]/td[3]")
         print(fnameele.text)
@@ -65,58 +71,26 @@ class CreateUser():
         logoutImg.click()
         logoutlink = self.driver.find_element_by_xpath("//div[contains(text(),'Logout')]")
         logoutlink.click()
+        return emailuser
+
+    def validatecreateuser(self,emailuser,testcasename):
         ele_user = self.driver.find_element_by_css_selector("input[name='login']")
+        self.logger.info("****--testcasename-"+testcasename+"---**** validating newly created user started");
         ele_user.click()
         ele_user.send_keys(emailuser)
+        self.logger.info("****--testcasename-"+testcasename+"---**** Entering username created to check "+emailuser);
         ele_password = self.driver.find_element_by_css_selector("#password")
         ele_password.click()
         ele_password.send_keys("password")
+        self.logger.info("****--testcasename-"+testcasename+"---**** Entering password created to check " + 'password');
         ele_login = self.driver.find_element_by_css_selector("button.v-btn.theme--light")
         ele_login.click()
-        WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, "//div[contains(text(),'" + fnameval + "')]")))
-        ele_dashboardloginuser = self.driver.find_element_by_xpath("//div[contains(text(),'" + fnameval + "')]")
-        assert ele_dashboardloginuser.is_displayed()
-        logoutImg = self.driver.find_element_by_xpath("//i[contains(text(),'more_vert')]")
-        logoutImg.click()
-        logoutlink = self.driver.find_element_by_xpath("//div[contains(text(),'Logout')]")
-        logoutlink.click()
-        ele_user = self.driver.find_element_by_css_selector("input[name='login']")
-        ele_user.click()
-        ele_user.send_keys(emailuser)
-        ele_password = self.driver.find_element_by_css_selector("#password")
-        ele_password.click()
-        ele_password.send_keys("password")
-        ele_login = self.driver.find_element_by_css_selector("button.v-btn.theme--light")
-        ele_login.click()
+        username=emailuser.split('@')
         WebDriverWait(self.driver, 30).until(
-            EC.element_to_be_clickable((By.XPATH, "//div[contains(text(),'Change Password')]")))
-        ele_createUser = self.driver.find_element_by_xpath("//div[contains(text(),'Change Password')]")
-        ele_createUser.click()
-        ele_changepwd = self.driver.find_element_by_css_selector("input[aria-label='Password']")
-        ele_changepwd.click()
-        ele_changepwd.send_keys("pwd")
-        ele_confirmchangepwd = self.driver.find_element_by_css_selector("input[aria-label='Confirm Password']")
-        ele_confirmchangepwd.click()
-        ele_confirmchangepwd.send_keys("pwd")
-        WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, "//div[contains(text(),'Save')]")))
-        ele_createusersave = self.driver.find_element_by_xpath("//div[contains(text(),'Save')]")
-        ele_createusersave.click()
-        logoutImg = self.driver.find_element_by_xpath("//i[contains(text(),'more_vert')]")
-        logoutImg.click()
-        logoutlink = self.driver.find_element_by_xpath("//div[contains(text(),'Logout')]")
-        logoutlink.click()
-        ele_user = self.driver.find_element_by_css_selector("input[name='login']")
-        ele_user.click()
-        ele_user.send_keys(emailuser)
-        ele_password = self.driver.find_element_by_css_selector("#password")
-        ele_password.click()
-        ele_password.send_keys("pwd")
-        ele_login = self.driver.find_element_by_css_selector("button.v-btn.theme--light")
-        ele_login.click()
-        WebDriverWait(self.driver, 30).until(
-            EC.element_to_be_clickable((By.XPATH, "//div[contains(text(),'" + fnameval + "')]")))
-        ele_dashboardloginuser = self.driver.find_element_by_xpath("//div[contains(text(),'" + fnameval + "')]")
+            EC.element_to_be_clickable((By.XPATH, "//div[contains(text(),'" + username[0] + "')]")))
+        ele_dashboardloginuser = self.driver.find_element_by_xpath("//div[contains(text(),'" + username[0] + "')]")
         assert ele_dashboardloginuser.is_displayed()
+        self.logger.info("****--testcasename-"+testcasename+"---**** validating newly created user successfully done");
 
 
 

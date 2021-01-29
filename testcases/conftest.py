@@ -1,5 +1,6 @@
 from selenium import webdriver
 import pytest
+
 from utilities.ReadProperties import  ReadConfig
 from  pageobjects.LoginPage import LoginPage
 from  pageobjects.CreateUser import CreateUser
@@ -10,7 +11,7 @@ def setup(browser):
     if browser=='Chrome':
         driver = webdriver.Chrome()
     elif browser == 'firefox':
-        driver = WebDriver.Firefox()
+        driver = webdriver.Firefox()
     elif browser=='remote':
         desired_cap = {
             'os_version': '10',
@@ -45,56 +46,4 @@ def browser(request):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#@pytest.fixture(scope="session")
-# def setup(request):
-#     print("initiating chrome driver")
-#
-#     driver = webdriver.Chrome()
-#     driver.implicitly_wait(5)
-#     session = request.node
-#     for item in session.items:
-#         cls = item.getparent(pytest.Class)
-#         setattr(cls.obj, "driver", driver)
-#     driver.get(ReadConfig.getapplicationURL())
-#     driver.maximize_window()
-#     cf = LoginPage(driver)
-#     cu = CreateUser(driver)
-#     yield driver,cf,cu
-#
-#
-#     driver.close()
 
