@@ -1,7 +1,7 @@
 import pytest
 import allure
 from  pageobjects.LoginPage import LoginPage
-from  pageobjects.ChangePassword import ChangePassword
+from  pageobjects.ChangePasswordPage import ChangePassword
 from utilities.CustomLogger import LogGen
 from utilities.ReadProperties import  ReadConfig
 

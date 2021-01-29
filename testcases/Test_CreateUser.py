@@ -1,7 +1,7 @@
 import pytest
 import allure
 from  pageobjects.LoginPage import LoginPage
-from  pageobjects.CreateUser import CreateUser
+from  pageobjects.CreateUserpage import CreateUser
 from utilities.CustomLogger import LogGen
 from utilities.ReadProperties import  ReadConfig
 from utilities.BrowserFactory import setup

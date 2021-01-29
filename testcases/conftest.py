@@ -3,7 +3,7 @@ import pytest
 
 from utilities.ReadProperties import  ReadConfig
 from  pageobjects.LoginPage import LoginPage
-from  pageobjects.CreateUser import CreateUser
+from  pageobjects.CreateUserpage import CreateUser
 
 
 @pytest.fixture()
